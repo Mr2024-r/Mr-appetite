@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat','Poppins',sans-serif;
+    background: #f9ffff;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    background: linear-gradient(to right,#00c6ff,#0072ff);
+    color: white;
+}
+
+.logo-box {
+    display: flex;
+    align-items:center;
+    gap: 10px;
+}
+
+.logo-box img {
+    width: 80px;px;
+}
+
+/* MENU ICON */
+.menu-icon {
+    font-size: 60px;
+    cursor: pointer;
+}
+
+/* DROPDOWN */
+.dropdown {
+    display:inline-block;
+    background: white;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.dropdown a {
+    display: block;
+    padding: 10px;
+    color: #0072ff;
+    text-decoration: none;
+}
+
+/* HOME */
+.home {
+    text-align: center;
+    padding: 40px;
+}
+
+.search {
+    padding: 15px;
+    width: 60%;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+}
+
+/* CATEGORIES */
+.cat-grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    text-align: center;
+    gap: 15px;
+    padding: 20px;
+}
+
+/* MENU GRID */
+.menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 40px;
+    padding: 40px;
+}
+
+/* CARD */
+.card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* SAME SIZE IMAGES (IMPORTANT) */
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* forces same shape */
+    border-radius: 15px 15px 0 0;
+}
+
+/* BUTTON */
+button {
+    background: green;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+/* CONTACT */
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: #e6f7ff;
+    padding: 20px;
+}
+
+.contact-img {
+    width: 250px;
+    animation: pop 2s infinite alternate;
+}
+
+@keyframes pop {
+    from {transform: scale(1);}
+    to {transform: scale(1.05);}
+}
+
+.promo {
+    color: green;
+    font-weight: bold;
+}
+
+/* OFFERS */
+.offers {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.offer {
+    background: white;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+/* FLOAT BUTTON */
+.whatsapp {
+    position: fixed;
+    bottom: 60px;
+    right: 40px;
+    background: green;
+    color: white;
+    padding: 30px;
+    border-radius: 100%;
+    text-decoration: mediumspringgreen;
+}

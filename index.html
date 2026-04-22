@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr. Appetite</title>
+
+    <link rel="stylesheet" href="infinity.css">
+
+    <!-- FONTS -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&family=Poppins:wght@400;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo-box">
+            <img src="images/file_00000000879c722fbf9c75eb6f7cadf5.png">
+            <h2>Mr. Appetite</h2>
+        </div>
+
+        <div class="menu-icon" onclick="toggleMenu()">⋮</div>
+    </header>
+
+    <!-- DROPDOWN MENU -->
+    <div id="dropdown" class="dropdown">
+        <a href="#">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#">Cart</a>
+        <a href="#contact">Contact</a>
+        <a href="#offers">Offers</a>
+        <a href="#">About Us</a>
+    </div>
+
+    <!-- HOME -->
+    <section class="home">
+        <h1>Welcome to Mr. Appetite</h1>
+        <input type="text" placeholder="🔍 Search your favorite food..." class="search">
+    </section>
+
+    <!-- CATEGORIES -->
+    <section class="categories">
+        <h2>Categories</h2>
+
+        <div class="cat-grid">
+            <div>🍟 Fast Food</div>
+            <div>🍛 Rice Meals</div>
+            <div>🥤 Drinks</div>
+            <div>🍗 Specials</div>
+        </div>
+    </section>
+
+    <!-- MENU -->
+    <section id="menu">
+        <h2>Our Menu</h2>
+
+        <div class="menu">
+
+            <div class="card">
+                <img src="rJVxqTHxNZM2C4XYuTY5uA.jpg">
+                <h3>Chips + Fried Chicken</h3>
+                <p>TZS 8,000</p>
+                <button onclick="order()">Add to Cart</button>
+            </div>
+
+            <div class="card">
+                <img src="grilled-sausages-fries-ketchup-salad-png.webp">
+                <h3>Chips + Sausage & Salads</h3>
+                <p>TZS 6,000</p>
+                <button onclick="order()">Add to Cart</button>
+            </div>
+
+            <div class="card">
+                <img src="Nigerian-jollof.jpeg">
+                <h3>Rice + Roast Meat</h3>
+                <p>TZS 7,000</p>
+                <button onclick="order()">Add to Cart</button>
+            </div>
+
+            <div class="card">
+                <img src="Jinsi-ya-kupika-pilau-ya-Nyama.jpg">
+                <h3>Biryani + Makange</h3>
+                <p>TZS 9,000</p>
+                <button onclick="order()">Add to Cart</button>
+            </div>
+
+            <div class="card">
+                <img src="images/samaki wali PNG62.png">
+                <h3>Rice + Fish Makange</h3>
+                <p>TZS 7,500</p>
+                <button onclick="order()">Add to Cart</button>
+            </div>
+
+            <div class="card">
+                <img src="images/food.png">
+                <h3>Ugali + Beans & Fish</h3>
+                <p>TZS 6,500</p>
+                <button onclick="order()">Add to Cart</button>
+            </div>
+
+            <div class="card">
+                <img
+                    src="images/bottles-assorted-global-soft-drinks-poznan-poland-jan-drink-market-dominated-brands-few-multinational-companies-founded-84850971.webp">
+                <h3>Soft Drinks (Pepsi & Coca-Cola)</h3>
+                <p>TZS 1,500</p>
+                <button onclick="order()">Add to Cart</button>
+            </div>
+
+            <div class="card">
+                <img src="images/pngtree-vibrant-fruit-juice-splash-png-image_20324861.png">
+                <h3>Fresh Juice</h3>
+                <p>TZS 3,000</p>
+                <button onclick="order()">Add to Cart</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+        <div class="contact-container">
+
+            <img src="images/smiling-businessman-talking-on-mobile-phone-with-transparent-background-png.webp"
+                class="contact-img">
+
+            <div class="contact-text">
+                <h2>Order Now</h2>
+
+                <p>📍 AKIBA, POSTA DAR ES SALAAM</p>
+
+                <p>📞 +255-698-966-790<br>
+                    +255-674-730-715<br>
+                    +255-716-290-086</p>
+
+                <p>💬 WhatsApp:<wbr>
+                    +255-713-773-622 (Owner)<br>
+                    +255-716-290-086<br>
+                    +255-674-730-715</p>
+
+                <p>📧 mrappetiterestaurant@gmail.com</p>
+
+                <p class="promo">🔥 Delicious meal unforgettable taste</p>
+
+                <a href="mailto:mrappetiterestaurant@gmail.com" class="btn">Order via Email</a>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- OFFERS -->
+    <section id="offers">
+        <h2>Our Offers</h2>
+
+        <div class="offers">
+
+            <div class="offer">
+                <img
+                    src="images/pngtree-big-isolated-motorcycle-vector-colorful-icons-flat-illustrations-of-delivery-by-png-image_4366928.png">
+                <p>Free Delivery</p>
+            </div>
+
+            <div class="offer">
+                <img
+                    src="images/png-clipart-person-holding-three-credit-cards-credit-card-payment-bank-finance-credit-card-hand-payment-thumbnail.png">
+                <p>Discount Offers</p>
+            </div>
+
+            <div class="offer">
+                <img src="images/pngtree-download-logo-template-free-wifi-black-and-white-png-image_6091574.png">
+                <p>Free WiFi</p>
+            </div>
+
+            <div class="offer">
+                <img src="images/usb.webp">
+                <p>Charging Cables</p>
+            </div>
+
+            <div class="offer">
+                <img
+                    src="images/beautiful-young-woman-holding-percentage-sign-discount-studio-shot-happy-hispanic-smiling-joyfully-sale-isolated-white-97657780.webp">
+                <p>30% Best Customer Discount</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FLOATING WHATSAPP -->
+    <a href="https://wa.me/255713773622?text=Hello%20I%20want%20to%20order" class="whatsapp">💬</a>
+
+    <script src="infinity.js"></script>
+</body>
+
+</html>
